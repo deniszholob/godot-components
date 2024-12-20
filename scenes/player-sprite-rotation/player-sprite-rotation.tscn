@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=3 uid="uid://cmigrh2hisohi"]
+
+[ext_resource type="Texture2D" uid="uid://dr0afbuvsnaaq" path="res://assets/eye-directions.png" id="1_5qj2l"]
+[ext_resource type="Script" path="res://scenes/player-sprite-rotation/player-sprite-rotation.gd" id="1_8n28e"]
+[ext_resource type="Script" path="res://components/input-device-direction.component.gd" id="2_3y83d"]
+[ext_resource type="Script" path="res://components/movement/move-character-sprite-animation-rotation.component.gd" id="3_sw3di"]
+[ext_resource type="Script" path="res://components/movement/move-character-body-2d.component.gd" id="5_bp5um"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8rssm"]
+radius = 8.0
+
+[sub_resource type="Gradient" id="Gradient_tcad5"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_thsl5"]
+gradient = SubResource("Gradient_tcad5")
+fill_to = Vector2(0, 1)
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_8n28e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8rssm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5qj2l")
+hframes = 4
+vframes = 2
+
+[node name="InputDeviceDirectionComponent" type="Node" parent="."]
+script = ExtResource("2_3y83d")
+
+[node name="MoveCharacterSpriteAnimationRotationComponent" type="Node" parent="." node_paths=PackedStringArray("sprite", "pivot")]
+script = ExtResource("3_sw3di")
+sprite = NodePath("../Sprite2D")
+frame_start_direction = 2
+pivot = NodePath("../Pivot")
+
+[node name="MoveCharacterBody2DComponent" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("5_bp5um")
+actor = NodePath("..")
+speed = 300
+
+[node name="Pivot" type="Node2D" parent="."]
+
+[node name="PointLight2D" type="PointLight2D" parent="Pivot"]
+position = Vector2(0, -36)
+scale = Vector2(0.25, 0.875)
+color = Color(1, 0.819608, 0.54902, 1)
+energy = 1.5
+texture = SubResource("GradientTexture2D_thsl5")

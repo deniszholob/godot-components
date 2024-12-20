@@ -21,6 +21,10 @@ layout_mode = 2
 layout_mode = 2
 text = "FSM"
 
+[node name="ButtonDemoAnimatedSpriteRotation" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Animated Sprite rotation"
+
 [node name="ButtonDemoTrasparencyZone" type="Button" parent="ScrollContainer/VBoxContainer"]
 layout_mode = 2
 text = "Transparency Zone"

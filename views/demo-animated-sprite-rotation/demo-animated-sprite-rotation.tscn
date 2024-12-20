@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcwyow7h03tcf"]
+
+[ext_resource type="PackedScene" uid="uid://cmigrh2hisohi" path="res://scenes/player-sprite-rotation/player-sprite-rotation.tscn" id="1_kug3t"]
+[ext_resource type="PackedScene" uid="uid://bu3flotnt4cbn" path="res://views/demo-base.tscn" id="1_o71l3"]
+
+[sub_resource type="Gradient" id="Gradient_yh633"]
+colors = PackedColorArray(0.295867, 0.295866, 0.295866, 1, 0.295866, 0.295867, 0.295866, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m0x54"]
+gradient = SubResource("Gradient_yh633")
+
+[node name="DemoAnimatedApriteRotation" instance=ExtResource("1_o71l3")]
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+position = Vector2(576, 324)
+scale = Vector2(18, 10.125)
+texture = SubResource("GradientTexture2D_m0x54")
+
+[node name="Player" parent="." index="1" instance=ExtResource("1_kug3t")]
+position = Vector2(576, 320)
+
+[node name="Label" type="Label" parent="CanvasLayer" index="1"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -128.0
+offset_right = 128.0
+offset_bottom = 64.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+text = "WASD to move"
+horizontal_alignment = 1
+vertical_alignment = 1
