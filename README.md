@@ -1,10 +1,10 @@
-# Godot template_godot_project_name [Game](https://deniszholob.itch.io/template-godot-project)
+# Godot Components [Game](https://deniszholob.itch.io/godot-components)
 
-template_godot_project_description
+Collection of components for godot game engine to reuse in projects
 
-> **Play it on [Itch.io](https://deniszholob.itch.io/template-godot-project)!**
+> **Play it on [Itch.io](https://deniszholob.itch.io/godot-components)!**
 
-## Deployments [![Build Status](https://github.com/deniszholob/template-godot-project/actions/workflows/deploy.yml/badge.svg)](https://github.com/deniszholob/template-godot-project/actions/workflows/deploy.yml)
+## Deployments [![Build Status](https://github.com/deniszholob/godot-components/actions/workflows/deploy.yml/badge.svg)](https://github.com/deniszholob/godot-components/actions/workflows/deploy.yml)
 
 - See [Contributing](./CONTRIBUTING.md) for technical details.
 - See [Assets Readme](./assets/README.md) for asset details.
@@ -18,4 +18,4 @@ If you find the cheat sheet or the source code useful, consider:
 
 # Screenshots
 
-![template_godot_project_name](.screenshots/template-godot-project.png)
+![Components](.screenshots/godot-components.png)

@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="template_godot_project_name"
-config/tags=PackedStringArray("ddd", "sandbox")
-run/main_scene="res://views/levels/main.tscn"
+config/name="(DDD) Components"
+config/tags=PackedStringArray("ddd")
+run/main_scene="res://views/demos.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.png"
 
@@ -21,8 +21,7 @@ config/icon="res://icon.png"
 Game="*res://services/game.service.gd"
 
 [display]
-window/size/viewport_width=640
-window/size/viewport_height=360
+
 window/stretch/mode="canvas_items"
 
 [input]
