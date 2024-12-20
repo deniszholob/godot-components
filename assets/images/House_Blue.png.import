@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bytf3sdwgbpnq"
-path="res://.godot/imported/transparency-zone.png-471c432fbf775e7d658008a33fbe3005.ctex"
+uid="uid://n354fwif34ev"
+path="res://.godot/imported/House_Blue.png-b5bb2025b7cbc251cdf1b80dff2fa965.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://views/demo-transparency-zone/transparency-zone.png"
-dest_files=["res://.godot/imported/transparency-zone.png-471c432fbf775e7d658008a33fbe3005.ctex"]
+source_file="res://assets/images/House_Blue.png"
+dest_files=["res://.godot/imported/House_Blue.png-b5bb2025b7cbc251cdf1b80dff2fa965.ctex"]
 
 [params]
 

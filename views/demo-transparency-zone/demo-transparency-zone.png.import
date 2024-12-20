@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nv1j0xpycbvv"
-path="res://.godot/imported/icon.png-364acb4e94aa72dba9d13dfe14927a9a.ctex"
+uid="uid://bgtlrxua0153b"
+path="res://.godot/imported/demo-transparency-zone.png-f3d5d5d0d46ba4345b955f6dccad51a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://views/demo-fsm/icon.png"
-dest_files=["res://.godot/imported/icon.png-364acb4e94aa72dba9d13dfe14927a9a.ctex"]
+source_file="res://views/demo-transparency-zone/demo-transparency-zone.png"
+dest_files=["res://.godot/imported/demo-transparency-zone.png-f3d5d5d0d46ba4345b955f6dccad51a4.ctex"]
 
 [params]
 

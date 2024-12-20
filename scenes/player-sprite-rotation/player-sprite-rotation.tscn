@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cmigrh2hisohi"]
 
-[ext_resource type="Texture2D" uid="uid://dr0afbuvsnaaq" path="res://assets/eye-directions.png" id="1_5qj2l"]
+[ext_resource type="Texture2D" uid="uid://dr0afbuvsnaaq" path="res://assets/images/eye-directions.png" id="1_5qj2l"]
 [ext_resource type="Script" path="res://scenes/player-sprite-rotation/player-sprite-rotation.gd" id="1_8n28e"]
 [ext_resource type="Script" path="res://components/input-device-direction.component.gd" id="2_3y83d"]
 [ext_resource type="Script" path="res://components/movement/move-character-sprite-animation-rotation.component.gd" id="3_sw3di"]

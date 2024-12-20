@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dcox83umumx0o"]
 
-[ext_resource type="Texture2D" uid="uid://xmfoofffpoh6" path="res://assets/icon.svg" id="2_40wyd"]
+[ext_resource type="Texture2D" uid="uid://dcodpfi8kl4jy" path="res://assets/images/godot.svg" id="1_t21v2"]
 [ext_resource type="Script" path="res://components/fsm/fsm.component.gd" id="3_ch7ax"]
 [ext_resource type="Script" path="res://views/demo-fsm/player-states/idle.state.gd" id="4_pfp8m"]
 [ext_resource type="Script" path="res://views/demo-fsm/player-states/moving.state.gd" id="5_gvmat"]
@@ -11,7 +11,7 @@ size = Vector2(128, 128)
 [node name="PlayerFSM" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_40wyd")
+texture = ExtResource("1_t21v2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_vud2d")

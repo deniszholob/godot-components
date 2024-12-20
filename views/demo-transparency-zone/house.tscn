@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkwtr8fqdr3ue"]
 
 [ext_resource type="PackedScene" uid="uid://cm40446pgdnv3" path="res://scenes/structure.tscn" id="1_4kygt"]
-[ext_resource type="Texture2D" uid="uid://n354fwif34ev" path="res://assets/House_Blue.png" id="2_hulxh"]
+[ext_resource type="Texture2D" uid="uid://n354fwif34ev" path="res://assets/images/House_Blue.png" id="2_hulxh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m1l4e"]
 size = Vector2(80, 88)
