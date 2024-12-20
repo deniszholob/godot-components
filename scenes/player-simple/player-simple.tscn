@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://54ev5kifu61t"]
+
+[ext_resource type="Texture2D" uid="uid://xmfoofffpoh6" path="res://assets/icon.svg" id="1_8c858"]
+[ext_resource type="Script" path="res://scenes/player-simple/player-simple.gd" id="1_v76y2"]
+[ext_resource type="Script" path="res://components/movement/move-character-body-2d.component.gd" id="2_i7tjy"]
+[ext_resource type="Script" path="res://components/input-device-direction.component.gd" id="4_npa84"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gylgh"]
+size = Vector2(128, 128)
+
+[node name="Player-Simple" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+collision_layer = 3
+script = ExtResource("1_v76y2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8c858")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gylgh")
+
+[node name="MoveCharacterBody2DComponent" type="Node" parent="." node_paths=PackedStringArray("actor")]
+script = ExtResource("2_i7tjy")
+actor = NodePath("..")
+speed = 300
+
+[node name="InputDeviceDirectionComponent" type="Node" parent="."]
+script = ExtResource("4_npa84")

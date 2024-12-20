@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0mpy55fhg5ns"]
+
+[ext_resource type="PackedScene" uid="uid://bu3flotnt4cbn" path="res://views/demo-base.tscn" id="1_ttx4t"]
+[ext_resource type="PackedScene" uid="uid://54ev5kifu61t" path="res://scenes/player-simple/player-simple.tscn" id="1_vjtve"]
+[ext_resource type="PackedScene" uid="uid://bkwtr8fqdr3ue" path="res://views/demo-transparency-zone/house.tscn" id="2_e8s5y"]
+
+[node name="DemoTransparencyZone" instance=ExtResource("1_ttx4t")]
+
+[node name="Player-Simple" parent="." index="1" instance=ExtResource("1_vjtve")]
+position = Vector2(576, 192)
+
+[node name="House" parent="." index="2" instance=ExtResource("2_e8s5y")]
+position = Vector2(576, 448)
+scale = Vector2(2, 2)
+
+[node name="Label" type="Label" parent="." index="3"]
+offset_left = 448.0
+offset_right = 704.0
+offset_bottom = 66.0
+theme_override_font_sizes/font_size = 24
+text = "Go down (S)"
+horizontal_alignment = 1
+vertical_alignment = 1

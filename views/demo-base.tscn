@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu3flotnt4cbn"]
+
+[ext_resource type="PackedScene" uid="uid://d00jsibfg3ny0" path="res://views/demo-overlay.tscn" id="1_4legg"]
+
+[node name="DemoBase" type="Node2D"]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("1_4legg")]

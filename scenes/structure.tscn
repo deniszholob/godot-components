@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm40446pgdnv3"]
+
+[ext_resource type="Script" path="res://components/effects/transparancy-zone-area.component.gd" id="1_4vvn1"]
+
+[node name="Structure" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="TransparencyZone" type="Area2D" parent="." node_paths=PackedStringArray("actor")]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_4vvn1")
+actor = NodePath("..")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TransparencyZone"]

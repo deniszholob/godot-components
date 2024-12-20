@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhlq1ykt0fkhe"]
+
+[ext_resource type="PackedScene" uid="uid://bu3flotnt4cbn" path="res://views/demo-base.tscn" id="1_40m5a"]
+[ext_resource type="PackedScene" uid="uid://dcox83umumx0o" path="res://views/demo-fsm/player-fsm.tscn" id="1_tsqbg"]
+
+[node name="DemoFSM" instance=ExtResource("1_40m5a")]
+
+[node name="Player" parent="." index="1" instance=ExtResource("1_tsqbg")]
+position = Vector2(576, 320)
